@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/midi-chords/static/css/main.8fc47e02.chunk.css",
+    "main.js": "/midi-chords/static/js/main.52f93cfa.chunk.js",
+    "main.js.map": "/midi-chords/static/js/main.52f93cfa.chunk.js.map",
+    "runtime-main.js": "/midi-chords/static/js/runtime-main.f15e432e.js",
+    "runtime-main.js.map": "/midi-chords/static/js/runtime-main.f15e432e.js.map",
+    "static/js/2.44a9a677.chunk.js": "/midi-chords/static/js/2.44a9a677.chunk.js",
+    "static/js/2.44a9a677.chunk.js.map": "/midi-chords/static/js/2.44a9a677.chunk.js.map",
+    "index.html": "/midi-chords/index.html",
+    "precache-manifest.e2d049791d74dcc5c43af2db79ee66e2.js": "/midi-chords/precache-manifest.e2d049791d74dcc5c43af2db79ee66e2.js",
+    "service-worker.js": "/midi-chords/service-worker.js",
+    "static/css/main.8fc47e02.chunk.css.map": "/midi-chords/static/css/main.8fc47e02.chunk.css.map",
+    "static/js/2.44a9a677.chunk.js.LICENSE": "/midi-chords/static/js/2.44a9a677.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f15e432e.js",
+    "static/js/2.44a9a677.chunk.js",
+    "static/css/main.8fc47e02.chunk.css",
+    "static/js/main.52f93cfa.chunk.js"
+  ]
+}
