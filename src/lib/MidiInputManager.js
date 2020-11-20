@@ -94,8 +94,9 @@ export default class MidiInputManager {
     _handleMIDIMessage = (message) => {
         // console.log(message);
         const device = message.target.name;
-        const command = message.data[0];
-        const channel = command % 16;
+        const commandAndChannel = message.data[0];
+        const channel = commandAndChannel % 16;
+        const command = commandAndChannel - channel;
         const time = message.timeStamp;
         const pitch = message.data[1];
         // A velocity value might not be included with a noteOff command
