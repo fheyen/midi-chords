@@ -3,10 +3,10 @@ import './style/App.css';
 // Views
 import PianoKeyboard from './components/PianoKeyboard';
 // API, data etc.
-import MidiInputManager from './lib/MidiInputManager';
+import { Chord } from "@tonaljs/tonal";
+import { MidiInputManager } from 'musicvis-lib';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { getCHordType2 } from './lib/Chords';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 export default class App extends Component {
@@ -84,13 +84,24 @@ export default class App extends Component {
         this.setState({ currentNotes: newMap });
     }
 
+    /**
+     * https://github.com/tonaljs/tonal/tree/master/packages/chord
+     * Detected chords can be used with https://github.com/tonaljs/tonal/tree/master/packages/chord-type
+     * @param {Note[]} notes
+     * @returns {String[]} possible chord types
+     */
+    getChordName(notes) {
+        const noteLetters = notes.map(d => d.getLetter());
+        return Chord.detect(noteLetters);
+    }
+
     render() {
         const s = this.state;
         const notes = Array.from(s.currentNotes.values())
             .sort((a, b) => a.pitch - b.pitch);
         // const chord = getChordType(notes);
         // console.log(chord);
-        const chord2 = getCHordType2(notes);
+        const chord2 = this.getChordName(notes);
         console.log(chord2);
         return (
             <div className={`App dark`} >

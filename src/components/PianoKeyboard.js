@@ -1,8 +1,7 @@
 import React from 'react';
 import { range } from 'd3-array';
 import View from '../lib/ui/View';
-import { getMidiNoteByNr, isSharp } from '../lib/Midi';
-import { pianoPitchRange } from '../lib/instruments/Piano';
+import { Midi, Piano } from 'musicvis-lib';
 
 export default class PianoKeyboard extends View {
 
@@ -16,8 +15,8 @@ export default class PianoKeyboard extends View {
     render() {
         const { rowSpan, columnSpan, viewWidth, viewHeight, width, height, margin } = this.state;
         const { currentNotes } = this.props;
-        const { minPitch, maxPitch } = pianoPitchRange.get(88);
-        const whiteNotes = range(minPitch, maxPitch + 1).filter(d => !isSharp(d));
+        const { minPitch, maxPitch } = Piano.pianoPitchRange.get(88);
+        const whiteNotes = range(minPitch, maxPitch + 1).filter(d => !Midi.isSharp(d));
         // Keys
         const keyWidth = width / whiteNotes.length;
         const blackKeyWidth = keyWidth * 0.9;
@@ -32,8 +31,8 @@ export default class PianoKeyboard extends View {
                 if (pitch < minPitch || pitch > maxPitch) {
                     continue;
                 }
-                const black = isSharp(pitch);
-                const note = getMidiNoteByNr(pitch);
+                const black = Midi.isSharp(pitch);
+                const note = Midi.getMidiNoteByNr(pitch);
                 // Position and size
                 const x = black ? currentX - (0.5 * blackKeyWidth) : currentX;
                 let y = black ? 0 : height * 0.02;

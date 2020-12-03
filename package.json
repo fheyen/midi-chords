@@ -11,7 +11,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@tonaljs/tonal": "^4.3.0",
+    "@tonaljs/tonal": "^4.6.0",
     "d3-array": "^2.8.0",
     "d3-axis": "^1.0.12",
     "d3-brush": "^1.1.6",
@@ -21,7 +21,7 @@
     "d3-scale": "^3.2.3",
     "d3-scale-chromatic": "^1.5.0",
     "d3-shape": "^1.3.7",
-    "lodash": "^4.17.20",
+    "musicvis-lib": "^0.10.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.3.0"
