@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/midi-chords/static/css/main.57c268e4.chunk.css",
-    "main.js": "/midi-chords/static/js/main.25accedb.chunk.js",
-    "main.js.map": "/midi-chords/static/js/main.25accedb.chunk.js.map",
+    "main.css": "/midi-chords/static/css/main.8fc47e02.chunk.css",
+    "main.js": "/midi-chords/static/js/main.b5f54075.chunk.js",
+    "main.js.map": "/midi-chords/static/js/main.b5f54075.chunk.js.map",
     "runtime-main.js": "/midi-chords/static/js/runtime-main.f15e432e.js",
     "runtime-main.js.map": "/midi-chords/static/js/runtime-main.f15e432e.js.map",
-    "static/js/2.b34bffe1.chunk.js": "/midi-chords/static/js/2.b34bffe1.chunk.js",
-    "static/js/2.b34bffe1.chunk.js.map": "/midi-chords/static/js/2.b34bffe1.chunk.js.map",
+    "static/js/2.cfc69d08.chunk.js": "/midi-chords/static/js/2.cfc69d08.chunk.js",
+    "static/js/2.cfc69d08.chunk.js.map": "/midi-chords/static/js/2.cfc69d08.chunk.js.map",
     "index.html": "/midi-chords/index.html",
-    "precache-manifest.0208a86503bf6c8ba55c3b855f50f6a7.js": "/midi-chords/precache-manifest.0208a86503bf6c8ba55c3b855f50f6a7.js",
+    "precache-manifest.1e5b939d96ed30e0e16726433b09fad5.js": "/midi-chords/precache-manifest.1e5b939d96ed30e0e16726433b09fad5.js",
     "service-worker.js": "/midi-chords/service-worker.js",
-    "static/css/main.57c268e4.chunk.css.map": "/midi-chords/static/css/main.57c268e4.chunk.css.map",
-    "static/js/2.b34bffe1.chunk.js.LICENSE": "/midi-chords/static/js/2.b34bffe1.chunk.js.LICENSE"
+    "static/css/main.8fc47e02.chunk.css.map": "/midi-chords/static/css/main.8fc47e02.chunk.css.map",
+    "static/js/2.cfc69d08.chunk.js.LICENSE": "/midi-chords/static/js/2.cfc69d08.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.f15e432e.js",
-    "static/js/2.b34bffe1.chunk.js",
-    "static/css/main.57c268e4.chunk.css",
-    "static/js/main.25accedb.chunk.js"
+    "static/js/2.cfc69d08.chunk.js",
+    "static/css/main.8fc47e02.chunk.css",
+    "static/js/main.b5f54075.chunk.js"
   ]
 }
